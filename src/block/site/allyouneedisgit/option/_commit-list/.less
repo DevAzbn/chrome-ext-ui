@@ -1,0 +1,69 @@
+.commit-list {
+	margin:2em 0;
+	
+	.item {
+		padding:1.5em 1em;
+		#fe.color(#ffffff);
+		border-top:1px rgba(255, 255, 255, 0.42) solid;
+		
+		&:first-child {
+			border-top:none !important;
+		}
+		
+		&:hover {
+			#fe.bg(rgba(0,0,0,0.2));
+			border-top:1px #1b9970 solid;
+			box-shadow:inset 0px 15px 50px -15px rgba(255, 255, 255, 0.42);
+		}
+		
+		.title {
+			#fe.size(1.6em);
+			
+			.repo-link {
+				#fe.color(#ffffff);
+				#fe.underline();
+				
+				&:hover {
+					#fe.underline(none);
+				}
+			}
+			
+		}
+		
+		.message {
+			margin:1em 0;
+			#fe.size(1.2em);
+			
+			.date {
+				#fe.size(0.8em);
+				#fe.color(#dddddd);
+			}
+			.text {
+				padding-left:1.25em;
+				margin:0.4em 0;
+			}
+		}
+		
+		.last-commit {
+			.last-commit-link {
+				#fe.color(#ffffff);
+				
+				&:hover {
+					#fe.underline();
+					
+					.r-arr {
+						margin-left:1em;
+					}
+				}
+				
+				.r-arr {
+					display:inline-block;
+					margin-left:0em;
+					transition:all 0.3s ease;
+				}
+			}
+		}
+		
+	}
+	
+}

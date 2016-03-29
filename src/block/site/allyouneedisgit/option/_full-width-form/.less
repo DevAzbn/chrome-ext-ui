@@ -1,0 +1,33 @@
+.full-width-form {
+	
+	.input-block {
+		input[type="submit"] {
+			.cleardefault();
+			cursor:pointer;
+			display:inline-block;
+			outline:1px #1b9970 solid;
+			border:0px #ffffff solid;
+			transition:all 0.3s ease;
+			padding:0.5em 2em;
+			#fe.bold();
+			#fe.size(1.5em);
+			#fe.bg(#ffffff);
+			#fe.color(#1b9970);
+			#fe.uppercase();
+			
+			&:hover {
+				#fe.bg(#1b9970);
+				#fe.color(#ffffff);
+				outline:1px #ffffff solid;
+			}
+		}
+		textarea {
+			#fe.size(1.4em);
+		}
+	}
+	
+	.save-notify {
+		display:inline-block;
+		margin-left:2em;
+	}
+}
