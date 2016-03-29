@@ -1255,6 +1255,10 @@ body {
 			box-shadow:inset 0px 15px 50px -15px rgba(255, 255, 255, 0.42);
 		}
 		
+		a {
+			#fe.color(#ffffff);
+		}
+		
 		.title {
 			#fe.size(1.6em);
 			
@@ -1335,7 +1339,11 @@ body {
 	}
 	
 	.save-notify {
-		display:inline-block;
+		display:none;
 		margin-left:2em;
+		
+		&.active {
+			display:inline-block;
+		}
 	}
 }
