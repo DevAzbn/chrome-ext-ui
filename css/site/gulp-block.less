@@ -1112,7 +1112,7 @@
 }
 body {
 	font-family: 'Open Sans', 'Roboto', Arial, Verdana, Georgia, Tahoma, sans-serif;
-	width:42em;
+	width:50em;
 	
 	&[class*='theme-'], *[class*='theme-'] {
 		
@@ -1176,8 +1176,9 @@ body {
 }
 
 .page-container {
-	max-width:40em;
+	max-width:42em;
 	margin:0 auto;
+	padding:1.5em 0;
 }
 body {
 	
@@ -1326,6 +1327,9 @@ body {
 			#fe.bg(#ffffff);
 			#fe.color(#1b9970);
 			#fe.uppercase();
+			border-radius:0;
+			background-image:none;
+			box-shadow:none;
 			
 			&:hover {
 				#fe.bg(#1b9970);
@@ -1334,6 +1338,7 @@ body {
 			}
 		}
 		textarea {
+			#fe.bg(#ffffff);
 			#fe.size(1.4em);
 		}
 	}
