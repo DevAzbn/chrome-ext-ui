@@ -12,6 +12,10 @@
 			
 			a {
 				#fe.color(#ffffff);
+				
+				&:before {
+					height:100%;
+				}
 			}
 		}
 		
@@ -24,6 +28,23 @@
 			#fe.color(#1b9970);
 			#fe.bold();
 			#fe.uppercase();
+			
+			position:relative;
+			transition:all 0.4s ease;
+			#fe.z(1);
+			
+			&:before {
+				content:'';
+				
+				position:absolute;
+				transition:all 0.4s ease;
+				left:0;
+				bottom:0;
+				height:0;
+				width:100%;
+				#fe.bg(#1b9970);
+				#fe.z(-1);
+			}
 		}
 	}
 	
