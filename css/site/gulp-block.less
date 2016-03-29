@@ -1276,6 +1276,7 @@ body {
 		
 		.message {
 			margin:1em 0;
+			padding-left:0.31em;
 			#fe.size(1.2em);
 			
 			.date {
@@ -1289,6 +1290,9 @@ body {
 		}
 		
 		.last-commit {
+			text-align:left;
+			padding-left:2em;
+			
 			.last-commit-link {
 				#fe.color(#ffffff);
 				
@@ -1308,6 +1312,36 @@ body {
 			}
 		}
 		
+	}
+	
+}
+.fixed-menu {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	#fe.bg(#ffffff);
+	
+	.menu-item {
+		
+		&.active {
+			#fe.bg(#1b9970);
+			
+			a {
+				#fe.color(#ffffff);
+			}
+		}
+		
+		a {
+			display:block;
+			text-align:center;
+			cursor:pointer;
+			margin:0em auto;
+			padding:2em 0;
+			#fe.color(#1b9970);
+			#fe.bold();
+			#fe.uppercase();
+		}
 	}
 	
 }
