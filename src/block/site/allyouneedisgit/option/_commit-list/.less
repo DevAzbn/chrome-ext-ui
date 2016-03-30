@@ -1,10 +1,54 @@
+.action-block {
+	height:450px;
+	position:relative;
+	
+	.scroll-hide {
+		height:96%;
+	}
+	
+	.scroll-container {
+		height:96%;
+	}
+}
+
+.scroll-hide {
+	overflow:hidden;
+	
+	.scroll-element {
+		overflow-x:hidden;
+		overflow-y:scroll;
+		width:110%;
+		height:100%;
+		
+		.scroll-overflow {
+			overflow-x:hidden;
+			overflow-y:scroll;
+			width:110%;
+			height:auto;
+		}
+	}
+}
+
+
+#ab-about .scroll-container {
+	&.vertical.right {
+		right:-10px;
+	}
+}
+/*
+.sandbox * {
+	max-width:none;
+}
+*/
+
 .commit-list {
 	margin:2em 0;
 	
 	.item {
-		padding:1.5em 1em;
+		padding:1.5em 1em 1.5em 1em;
 		#fe.color(#ffffff);
 		border-top:1px rgba(255, 255, 255, 0.42) solid;
+		width:84%;
 		
 		&:first-child {
 			border-top:none !important;
@@ -42,16 +86,20 @@
 			.date {
 				#fe.size(0.8em);
 				#fe.color(#dddddd);
+				
+				.demo-icon.icon-wristwatch {
+					margin-right:0.95em;
+				}
 			}
 			.text {
-				padding-left:1.25em;
+				padding-left:1.95em;
 				margin:0.4em 0;
 			}
 		}
 		
 		.last-commit {
 			text-align:left;
-			padding-left:2em;
+			padding-left:2.7em;
 			
 			.last-commit-link {
 				#fe.color(#ffffff);

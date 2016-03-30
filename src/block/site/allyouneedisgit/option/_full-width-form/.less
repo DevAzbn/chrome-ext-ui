@@ -27,12 +27,18 @@
 		textarea {
 			#fe.bg(#ffffff);
 			#fe.size(1.4em);
+			height:200px;
+			transition:all 0.4s ease;
+			
+			&:focus {
+				height:320px;
+			}
 		}
 	}
 	
 	.save-notify {
 		display:none;
-		margin-left:2em;
+		margin:0 2em;
 		
 		&.active {
 			display:inline-block;
